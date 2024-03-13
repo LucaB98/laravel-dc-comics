@@ -1,0 +1,33 @@
+#header {
+    background-color: white;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        margin: 15px;
+        max-width: 80px;
+    }
+
+    ul li {
+        list-style-type: none;
+
+        a {
+            padding: 10px;
+            margin: 5px;
+            color: black;
+        }
+
+        .active {
+            color: #0C7CEC;
+        }
+
+        :hover {
+            color: #0C7CEC;
+        }
+
+    }
+}

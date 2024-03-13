@@ -1,0 +1,71 @@
+.bg-white {
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+.bg-green {
+    background-color: rgb(15, 145, 15);
+    color: white;
+    font-size: small;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opacity {
+    opacity: 0.7;
+}
+
+.box-avaibles {
+    margin: 20px 0;
+}
+
+.box-price {
+    width: 50%;
+    border-right: 1px solid black;
+}
+
+.comic {
+    position: relative;
+    height: 450px;
+}
+
+.info {
+    max-width: 70%;
+}
+
+.bg-blue {
+    height: 50px;
+}
+
+.figure {
+    height: auto;
+    width: 200px;
+
+    position: absolute;
+
+    bottom: 460px;
+    left: 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.title-comic {
+    padding-top: 30px;
+}
+
+.spot {
+    padding: 30px;
+}
+
+.title-spot {
+    text-align: end;
+    margin: 5px 0;
+    color: grey;
+}
