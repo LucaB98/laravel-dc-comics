@@ -25,6 +25,8 @@
 
 .btn-load {
     padding: 10px 40px;
+    background-color: #0C7CEC;
+    color: white;
 }
 
 .cards {
@@ -47,4 +49,32 @@
         object-position: center top;
         margin: 10px 0;
     }
+}
+
+.create-box {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid #0C7CEC;
+}
+
+.btn-success {
+    background-color: #0C7CEC;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.card-create {
+    height: 400px;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }

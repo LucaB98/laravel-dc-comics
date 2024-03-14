@@ -7,7 +7,9 @@
 <header id="header">
     <div class="container">
         <section class="nav-header">
-            <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="logo">
+            <a href="{{route('home')}}">
+                <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="logo">
+            </a>
             <nav>
                 <ul class="flex">
                 @foreach($links as $link)

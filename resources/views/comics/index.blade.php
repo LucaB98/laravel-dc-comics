@@ -20,7 +20,7 @@
         @endforeach
     </div>
     <div class="container load-more">
-        <a href="#" class="bg-blue btn-load">LOAD MORE</a>
+        <a href="#" class="btn-load">LOAD MORE</a>
     </div>
 </main>
 @endsection
