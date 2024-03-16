@@ -9,7 +9,8 @@
             <a href="{{route('home')}}" class="btn-success">Indietro</a>
         </div>
         <div class="box-main">
-            <form action="">
+            <form action="{{route('comics.store')}}" method="POST">
+                @csrf
                 <div class="row flex">
                     <div class="col-create">
                         <div class="my-3">
@@ -36,30 +37,44 @@
                     <div class="col-create">
                         <div class="my-3">
                             <label for="type" class="form-label">genere</label>
-                            <input type="url" name='type' class="form-info" id="type" placeholder="Es:http//...">
+                            <input type="text" name='type' class="form-info" id="type" placeholder="Es:'action">
                         </div>
                     </div>
                     <div class="col-create">
                         <div class="my-3">
                             <label for="series" class="form-label">series</label>
-                            <input type="url" name='series' class="form-info" id="series" placeholder="Es:http//...">
+                            <input type="text" name='series' class="form-info" id="series" placeholder="Es:marvel">
                         </div>
                     </div>
                     <div class="col-create">
                         <div class="my-3">
                             <label for="sale_date" class="form-label">data</label>
-                            <input type="url" name='sale_date' class="form-info" id="sale_date" placeholder="Es:http//...">
+                            <input type="text" name='sale_date' class="form-info" id="sale_date" placeholder="Es: 2022/10/16..">
                         </div>
                     </div>
                     <div class="col-create">
                         <div class="my-3">
                             <label for="price" class="form-label">prezzo</label>
-                            <input type="url" name='price' class="form-info" id="price" placeholder="Es:http//...">
+                            <input type="text" name='price' class="form-info" id="price" placeholder="Es:6.99">
+                        </div>
+                    </div>    
+                </div>
+                <div class="row flex">
+                    <div class="col-create">
+                        <div class="my-3">
+                            <label for="artists" class="form-label">Artista</label>
+                            <input type="text" name='artists' class="form-info" id="artists" placeholder="stan lee">
+                        </div>
+                    </div>
+                    <div class="col-create">
+                        <div class="my-3">
+                            <label for="writers" class="form-label">Scrittore</label>
+                            <input type="text" name='writers' class="form-info" id="writers" placeholder="stan lee">
                         </div>
                     </div>
                 </div>
                 <div class="row flex row-btn">
-                    <a href="{{route('comics.create')}}" class="btn-create">Crea</a>
+                    <button class="btn-create">Crea</button>
                 </div>
             </form>
         </div>
