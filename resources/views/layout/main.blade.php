@@ -19,5 +19,7 @@
     </main>
 
     @include('includes.footer')
+
+    @yield('script')
 </body>
 </html>
