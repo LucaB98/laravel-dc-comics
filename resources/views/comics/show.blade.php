@@ -32,6 +32,9 @@
                 <img src="{{Vite::asset('resources/img/adv.jpg')}}" alt="">
             </div>
         </div>
+        <div class="row text-end">
+            <a href="{{route('comics.edit', $comic->id)}}" class="btn-success">Modifica</a>
+        </div>
     </div>
     
 </section>
