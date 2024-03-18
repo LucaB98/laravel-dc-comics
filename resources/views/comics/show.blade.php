@@ -32,8 +32,16 @@
                 <img src="{{Vite::asset('resources/img/adv.jpg')}}" alt="">
             </div>
         </div>
-        <div class="row text-end">
-            <a href="{{route('comics.edit', $comic->id)}}" class="btn-success">Modifica</a>
+        <div class="row text-end flex box-btn">
+            <div>
+
+                <a href="{{route('comics.edit', $comic->id)}}" class="btn-success">Modifica</a>
+            </div>
+            <form action="{{ route('comics.destroy', $comic->id)}}" method="post">
+                @csrf
+                @method('DELETE');
+                <button class="btn-danger">Elimina</button>
+            </form>
         </div>
     </div>
     
